@@ -8,7 +8,7 @@ Mi nombre es Francisco Crema (los mas cercanos me dicen Ponchi no Pancho jaja), 
 
 Esta pagina la hice en el primer curso con: Html, Css, SASS.
 
-- [Lauvi] (https://lauvi.netlify.app)
+- [Lauvi](https://lauvi.netlify.app)
 
 Esta pagina fue la del ultimo curso que hice: React, CSS y algunas librerias.
 
