@@ -1,3 +1,3 @@
-import padLeft from "./ej-2.2";
+import "./ej-2.4";
 
-console.log(padLeft);
+console.log("./ej-2-4");
