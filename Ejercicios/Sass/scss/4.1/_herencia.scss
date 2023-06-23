@@ -1,0 +1,9 @@
+.btn {
+  color: black;
+  transition: 0.5s;
+  border-radius: 7px;
+}
+
+.btnC {
+  @extend .btn;
+}

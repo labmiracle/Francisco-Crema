@@ -1,0 +1,12 @@
+$days: "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo";
+$colors: red, green, blue, orange, purple, yellow, teal;
+
+@each $day in $days {
+  $index: index($days, $day);
+  $color: nth($colors, $index);
+
+  .#{$day} {
+    color: $color;
+    font-size: 36px;
+  }
+}

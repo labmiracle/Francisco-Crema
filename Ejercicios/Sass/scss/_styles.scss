@@ -1,0 +1,18 @@
+#master {
+  @include alineacion();
+  .miracle-1 {
+    .conteiner {
+      @include margen-relleno(30px, 50px);
+
+      .info {
+        & p {
+          font-size: $font-size;
+          color: $color-p;
+        }
+        & img {
+          @include borde(1px solid, 15px);
+        }
+      }
+    }
+  }
+}

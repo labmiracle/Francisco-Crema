@@ -1,0 +1,18 @@
+/* Ejercicio 2.1 */
+
+@mixin prefijo($propiedad, $valor) {
+  -webkit-#{$propiedad}: $valor;
+  -moz-#{$propiedad}: $valor;
+  -o-#{$propiedad}: $valor;
+  -ms-#{$propiedad}: $valor;
+}
+
+@mixin margen-relleno($m, $p) {
+  margin: $m;
+  padding: $p;
+}
+
+@mixin borde($b, $br) {
+  border: $b;
+  border-radius: $br;
+}

@@ -1,0 +1,13 @@
+$background: #2a3132;
+
+@mixin page {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+body {
+  @include page();
+  background-color: $background;
+}

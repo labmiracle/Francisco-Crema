@@ -1,0 +1,65 @@
+@charset "UTF-8";
+body {
+  background-color: #2a3132; }
+  body * {
+    padding: 0;
+    margin: 0; }
+
+.btn, .btnC {
+  background-color: beige; }
+  .btn:hover, .btnC:hover {
+    color: cornflowerblue;
+    cursor: pointer; }
+
+.btn, .btnC {
+  color: black;
+  transition: 0.5s;
+  border-radius: 7px; }
+
+.btn, .btnC {
+  width: 50%;
+  height: 55%;
+  font-size: 15px; }
+
+.Lunes {
+  color: red;
+  font-size: 36px; }
+
+.Martes {
+  color: green;
+  font-size: 36px; }
+
+.Miércoles {
+  color: blue;
+  font-size: 36px; }
+
+.Jueves {
+  color: orange;
+  font-size: 36px; }
+
+.Viernes {
+  color: purple;
+  font-size: 36px; }
+
+.Sábado {
+  color: yellow;
+  font-size: 36px; }
+
+.Domingo {
+  color: teal;
+  font-size: 36px; }
+
+/* Ejercicio 2.1 */
+#master {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center; }
+  #master .miracle-1 .conteiner {
+    margin: 30px;
+    padding: 50px; }
+    #master .miracle-1 .conteiner .info p {
+      font-size: 40px;
+      color: red; }
+    #master .miracle-1 .conteiner .info img {
+      border: 1px solid;
+      border-radius: 15px; }
