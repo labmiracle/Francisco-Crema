@@ -149,4 +149,28 @@ const infoSort = () => {
   return { name, mass, height, gender };
 };
 
-console.log(infoSort());
+const infoEvery = () => {
+  const blueEyes = characters.every((ojos) => ojos.eye_color > "blue");
+  const massSuperior = characters.every((masa) => parseInt(masa.mass) > 40);
+  const caracterMenor = characters.every(
+    (caracter) => parseInt(caracter.height) < 200
+  );
+  const allMan = characters.every((man) => man.gender === "male");
+
+  return { blueEyes, massSuperior, caracterMenor, allMan };
+};
+
+const infoSome = () => {
+  const man = characters.some((man) => man.gender === "male");
+  const blueEyes = characters.some((blueEyes) => blueEyes.eye_color === "blue");
+  const maxHeight = characters.some(
+    (maxHeight) => parseInt(maxHeight.height) > 200
+  );
+  const massMenor = characters.some(
+    (massMenor) => parseInt(massMenor.mass) < 50
+  );
+
+  return { man, blueEyes, maxHeight, massMenor };
+};
+
+console.log(infoSome());
