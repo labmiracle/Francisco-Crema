@@ -172,5 +172,3 @@ const infoSome = () => {
 
   return { man, blueEyes, maxHeight, massMenor };
 };
-
-console.log(infoSome());
