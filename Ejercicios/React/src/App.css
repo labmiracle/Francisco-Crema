@@ -1,0 +1,9 @@
+#nav-container {
+  display: flex;
+  justify-content: center;
+}
+
+#nav-container a {
+  display: flex;
+  justify-content: center;
+}
