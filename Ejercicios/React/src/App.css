@@ -1,9 +1,25 @@
-#nav-container {
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+#nav .list-container {
   display: flex;
   justify-content: center;
 }
 
-#nav-container a {
-  display: flex;
-  justify-content: center;
+#nav .list-container li {
+  margin: 20px;
+  list-style: none;
+}
+
+.list-container li a {
+  color: goldenrod;
+  transition: 0.3s;
+}
+
+#nav .list-container li a:hover {
+  color: blueviolet;
 }

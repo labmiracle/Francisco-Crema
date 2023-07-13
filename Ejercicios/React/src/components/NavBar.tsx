@@ -1,11 +1,12 @@
 import { NavLink } from "react-router-dom";
+import "../App.css";
 
 function NavBar() {
   return (
     <header>
-      <div>
-        <nav>
-          <ul>
+      <div className="div-container">
+        <nav id="nav">
+          <ul className="list-container">
             <li>
               <NavLink to={"/props"}>Props</NavLink>
             </li>
