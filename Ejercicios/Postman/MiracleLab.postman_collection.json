@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "1450ae8b-d190-4171-b6d8-45dbbcb5f5be",
+		"name": "MiracleLab",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26489319"
+	},
+	"item": [
+		{
+			"name": "Check healt",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/zen",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"zen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User public",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/users/{{username}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						"{{username}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User private",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/user",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n           \"name\": \"MiracleLab API Repo\",\n           \"private\": true,\n           \"auto_init\": true,\n           \"incorrecto\": \"nanoc\"\n}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/user/repos",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"user",
+						"repos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post issues",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n         \"title\": \"New logo\",\n         \"body\": \"We should have one\",\n         \"labels\": []\n}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/repos/:user/:repoName/issues",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"repos",
+						":user",
+						":repoName",
+						"issues"
+					],
+					"variable": [
+						{
+							"key": "user",
+							"value": "FranciscoCrema"
+						},
+						{
+							"key": "repoName",
+							"value": "MiracleLab-API-Repo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete repo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n         \"title\": \"New logo\",\n         \"body\": \"We should have one\",\n         \"labels\": []\n}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/repos/:owner/:repo",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"repos",
+						":owner",
+						":repo"
+					],
+					"variable": [
+						{
+							"key": "owner",
+							"value": "FranciscoCrema"
+						},
+						{
+							"key": "repo",
+							"value": "MiracleLab-API-Repo"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "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",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://api.github.com",
+			"type": "string"
+		},
+		{
+			"key": "username",
+			"value": "FranciscoCrema",
+			"type": "string"
+		},
+		{
+			"key": "repoName",
+			"value": "githubApiTest",
+			"type": "string"
+		}
+	]
+}
