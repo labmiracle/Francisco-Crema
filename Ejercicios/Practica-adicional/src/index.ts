@@ -1,0 +1,1 @@
+import "./Tamagochi/tamagochi";
